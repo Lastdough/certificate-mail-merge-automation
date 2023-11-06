@@ -48,7 +48,7 @@ class Generator:
         # convert pdf template to jpg
         if not os.path.isfile(png_filepath):
             img = pdf2image.convert_from_path(
-                poppler_path=r'C:\poppler-0.68.0\bin', pdf_path=template_filepath)[0]
+                poppler_path=r'C:\Program Files\poppler-0.90.0\bin', pdf_path=template_filepath)[0]
             img.save(png_filepath)
 
     def initialize_project_tree(self, output):
