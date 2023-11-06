@@ -13,6 +13,7 @@ class RequiredComponentNotExist(Exception):
             self.message = f"Required component in {folder} does not exist: {component}"
         super().__init__(self.message)
 
+
 class DuplicateComponent(Exception):
     """Exception raised for errors in the input salary.
 
